@@ -1,0 +1,163 @@
+/* ========== ИСПОЛЬЗУЕМЫЕ СТИЛИ ========== */
+
+/* Эти классы используются в HTML */
+.header {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.feature-text {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    color: #7f8c8d;
+}
+
+/* ========== НЕИСПОЛЬЗУЕМЫЕ СТИЛИ (МЁРТВЫЙ КОД) ========== */
+
+/* Этот класс не используется в HTML */
+.old-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Этот класс не используется */
+.deprecated-button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Неиспользуемый ID */
+#oldHeader {
+    font-size: 32px;
+    color: red;
+    text-decoration: underline;
+}
+
+/* Неиспользуемые медиа-запросы */
+@media (max-width: 768px) {
+    .old-responsive {
+        display: none;
+    }
+}
+
+/* Неиспользуемый псевдокласс */
+.never-used:hover {
+    background-color: yellow;
+}
+
+/* Неиспользуемая анимация */
+@keyframes oldAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
